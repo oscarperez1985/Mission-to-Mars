@@ -10,7 +10,7 @@ The main objective of this module (**Module 10: Mission to Mars - Web Scraping w
 
 * Latest news articles are scraped from the NASA Mars news webpage:   *https://redplanetscience.com*
 * HImages from the Jet Propulsion Laboratory's Space webpage:         *https://spaceimages-mars.com*
-* Full-resolution images of Mars’s hemispheres:                       *https://spaceimages-mars.com*
+* Full-resolution images of Mars’s hemispheres:                       *https://marshemispheres.com*
 
 ### List of Applications:
 
