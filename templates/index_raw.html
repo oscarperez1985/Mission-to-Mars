@@ -13,10 +13,10 @@
   <body>
     <div class="container">
       <!-- Add Jumbotron to Header -->
-      <div class="jumbotron text-center" style="background-image: url(https://courses.bootcampspot.com/courses/1999/files/1957128/preview);">
-        <h1 style="background-color:powderblue;">Mission to Mars</h1>
+      <div class="jumbotron text-center">
+        <h1>Mission to Mars</h1>
         <!-- Add a button to activate scraping script -->
-        <p style="font-family:verdana"><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
       </div>
 
       <!-- Add section for Mars News -->
@@ -26,7 +26,7 @@
             <div class="media-body">
               <h2>Latest Mars News</h2>
               <h4 class="media-heading">{{ mars.news_title }}</h4>
-              <p style="font-family:verdana">{{ mars.news_paragraph }}</p>
+              <p>{{ mars.news_paragraph }}</p>
             </div>
           </div>
         </div>
@@ -61,9 +61,9 @@
         </div>
 
         {% for hemisphere in mars.hemispheres %}
-        <div class="col-md-3">
+        <div class="col-md-6">
           <div class="thumbnail">
-            <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="..." class="img-circle">
+            <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="...">
             <div class="caption">
               <h3>{{hemisphere.title}}</h3>
             </div>
